@@ -20,7 +20,7 @@ class String
       if sentence == ""
         split_sentences.delete_at(index)
       end
-        
     end
+    split_sentences.count
   end
 end
