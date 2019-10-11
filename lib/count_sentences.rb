@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
-    split_sentences = self.split(".").count
+    split_sentences = self.split(".")
     split_sentences << self.split("!")
+    split_sentences << self.split("?")
   end
 end
