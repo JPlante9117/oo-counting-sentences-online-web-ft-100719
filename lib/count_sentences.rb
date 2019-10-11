@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     split_sentences = self.split(/[.!?]/)
-    split_sentences.map_with_index do |sentence, index|
+    split_sentences.each_with_index do |sentence, index|
       if sentence == ""
         split_sentences.delete_at(index)
       end
